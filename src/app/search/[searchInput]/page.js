@@ -36,6 +36,7 @@ export default function SearchResultPage({ params }) {
       {/* Use  "filteredMovies" variable to map-loop rendering MovieRow component */}
       {filteredMovies.map((movie, i) => (
         <MovieRow
+          key={movie.id}
           id={movie.id}
           title={movie.title}
           detail={movie.detail}
